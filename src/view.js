@@ -46,7 +46,7 @@ export default class View {
 
     renderStartScreen() {
         this.context.fillStyle = 'white';
-        this.context.font = '18px "Play"';
+        this.context.font = '24px "Play"';
         this.context.textAlign = 'center';
         this.context.textBaseline = 'middle';
         this.context.fillText('Press ENTER to Start', this.width / 2, this.height / 2);
@@ -58,7 +58,7 @@ export default class View {
         this.context.fillRect(0, 0, this.width, this.height);
 
         this.context.fillStyle = 'white';
-        this.context.font = '18px "Play"';
+        this.context.font = '24px "Play"';
         this.context.textAlign = 'center';
         this.context.textBaseline = 'middle';
         this.context.fillText('Press ENTER to Resume', this.width / 2, this.height / 2);
@@ -68,7 +68,7 @@ export default class View {
         this.clearScreen();
         
         this.context.fillStyle = 'white';
-        this.context.font = '18px "Play"';
+        this.context.font = '24px "Play"';
         this.context.textAlign = 'center';
         this.context.textBaseline = 'middle';
         this.context.fillText('GAME OVER', this.width / 2, this.height / 2 - 48);
@@ -108,7 +108,7 @@ export default class View {
         this.context.textAlign = 'start';
         this.context.textBaseline = 'top';
         this.context.fillStyle = 'white';
-        this.context.font = '14px "Play"';
+        this.context.font = '20px "Play"';
 
         this.context.fillText(`Level: ${level}`, this.panelX, this.panelY + 0);
         this.context.fillText(`Score: ${score}`, this.panelX, this.panelY + 24);
@@ -121,10 +121,10 @@ export default class View {
 
                 if (block) {
                     this.renderBlock(
-                        this.panelX + (x * this.blockWidth * 0.5),
-                        this.panelY + 100 + (y * this.blockHeight * 0.5),
-                        this.blockWidth * 0.5,
-                        this.blockHeight * 0.5,
+                        this.panelX + (x * this.blockWidth * 0.7),
+                        this.panelY + 100 + (y * this.blockHeight * 0.7),
+                        this.blockWidth * 0.7,
+                        this.blockHeight * 0.7,
                         View.colors[block]
                     );
                 }
