@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+#root {
+    text-align: center;
+}
+
+#root h1 {
+    font-family: 'Play', sans-serif;
+    color: white;
+    font-size: 40px;
+}
+
+#root canvas {
+    display: block;
+    margin: 0 auto;
+}
